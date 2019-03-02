@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.mymusicapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FunkyActivity"
+            android:label="Playlist FUNKY"/>
+        <activity android:name=".RelaxActivity"
+            android:label="Playlist RELAX"/>
+        <activity android:name=".WorkingOutActivity"
+            android:label="Playlist WORKING OUT"/>
+        <activity android:name=".LoveSongsActivity"
+            android:label="Playlist LOVE SONGS"/>
+        <activity android:name=".PartyActivity"
+            android:label="Playlist PARTY"></activity>
+    </application>
+
+</manifest>

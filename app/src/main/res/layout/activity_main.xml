@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.mymusicapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/funky"
+        style="@style/CategoryStyle"
+        android:background="@color/category_funky"
+        android:text="Funky" />
+
+    <TextView
+        android:id="@+id/love"
+        android:background="@color/category_love"
+        style="@style/CategoryStyle"
+        android:text="Love Songs" />
+
+    <TextView
+        android:id="@+id/party"
+        android:background="@color/category_party"
+        style="@style/CategoryStyle"
+        android:text="Party" />
+
+    <TextView
+        android:id="@+id/relax"
+        android:background="@color/category_relax"
+        style="@style/CategoryStyle"
+        android:text="Relax" />
+
+    <TextView
+        android:id="@+id/workout"
+        android:background="@color/category_workout"
+        style="@style/CategoryStyle"
+        android:text="Working Out" />
+
+</LinearLayout>
