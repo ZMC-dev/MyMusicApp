@@ -12,12 +12,13 @@
     <!-- Style for a category of vocabulary words -->
     <style name="CategoryStyle">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">70dp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:padding">16dp</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
 

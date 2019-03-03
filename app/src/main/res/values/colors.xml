@@ -5,17 +5,17 @@
     <color name="colorAccent">#D81B60</color>
 
     <!-- Background color for the funky category -->
-    <color name="category_funky">#fa5788</color>
+    <color name="category_funky">#f48fb1</color>
 
     <!-- Background color for the love songs category -->
-    <color name="category_love">#ae52d4</color>
+    <color name="category_love">#b39ddb</color>
 
     <!-- Background color for the party category -->
-    <color name="category_party">#8559da</color>
+    <color name="category_party">#90caf9</color>
 
     <!-- Background color for the relax category -->
-    <color name="category_relax">#666ad1</color>
+    <color name="category_relax">#ffab91</color>
 
     <!-- Background color for the working out category -->
-    <color name="category_workout">#63a4ff</color>
+    <color name="category_workout">#80cbc4</color>
 </resources>

@@ -34,14 +34,14 @@ public class Song {
     }
 
     /**
-     * Get the name of the Android version
+     * Get the title of the song
      */
     public String getSongTitle () {
         return mSongTitle;
     }
 
     /**
-     * Get the Android version number
+     * Get the singer of the song
      */
     public String getSongSinger() {
         return mSongSinger;

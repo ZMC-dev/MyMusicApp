@@ -1,9 +1,11 @@
 package com.example.android.mymusicapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -99,9 +101,24 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+        // Find the View that send an email
+        ImageView shareByMail = (ImageView) findViewById(R.id.share_by_mail);
+        // Set a click listener on that View (share by email)
+        shareByMail.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed the intent "share by mail".
+            @Override
+            public void onClick(View v) {
+                Intent shareMyPlaylistEmail = new Intent(Intent.ACTION_SENDTO);
+                shareMyPlaylistEmail.setData(Uri.parse("mailto:")); // only email apps should handle this
+                shareMyPlaylistEmail.putExtra(Intent.EXTRA_SUBJECT, "My Music App");
+                shareMyPlaylistEmail.putExtra(Intent.EXTRA_TEXT, "Hey ! Checkout my favorite playlist Funky, Love Songs, Party, Relax & Working-out in MY MUSIC APP");
+                if (shareMyPlaylistEmail.resolveActivity(getPackageManager()) != null) {
+                    startActivity(shareMyPlaylistEmail);
 
+                }
+
+            };
+        });
     }
 
 }
-
-

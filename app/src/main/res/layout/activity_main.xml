@@ -1,41 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.android.mymusicapp.MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_height="120dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:src="@drawable/my_music_app" />
 
 
-    <TextView
-        android:id="@+id/funky"
-        style="@style/CategoryStyle"
-        android:background="@color/category_funky"
-        android:text="Funky" />
+        <TextView
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="5dp"
+            android:text="My Favorite Playlists"
+            android:textAlignment="center"
+            android:textColor="#424242"
+            android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/love"
-        android:background="@color/category_love"
-        style="@style/CategoryStyle"
-        android:text="Love Songs" />
+        <TextView
+            style="@style/CategoryStyle"
+            android:background="@color/category_funky"
+            android:id="@+id/funky"
+            android:text="Funky" />
 
-    <TextView
-        android:id="@+id/party"
-        android:background="@color/category_party"
-        style="@style/CategoryStyle"
-        android:text="Party" />
+        <TextView
+            style="@style/CategoryStyle"
+            android:background="@color/category_love"
+            android:id="@+id/love"
+            android:text="Love Songs" />
 
-    <TextView
-        android:id="@+id/relax"
-        android:background="@color/category_relax"
-        style="@style/CategoryStyle"
-        android:text="Relax" />
+        <TextView
+            style="@style/CategoryStyle"
+            android:background="@color/category_party"
+            android:id="@+id/party"
+            android:text="Party" />
 
-    <TextView
-        android:id="@+id/workout"
-        android:background="@color/category_workout"
-        style="@style/CategoryStyle"
-        android:text="Working Out" />
+        <TextView
+            style="@style/CategoryStyle"
+            android:background="@color/category_relax"
+            android:id="@+id/relax"
+            android:text="Relax" />
 
-</LinearLayout>
+        <TextView
+            style="@style/CategoryStyle"
+            android:background="@color/category_workout"
+            android:id="@+id/workout"
+            android:text="Working Out" />
+
+        <ImageView
+            android:id="@+id/share_by_mail"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:src="@drawable/share_mail" />
+    </LinearLayout>
+
+</ScrollView>
