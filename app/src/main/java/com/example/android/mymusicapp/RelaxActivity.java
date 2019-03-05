@@ -15,14 +15,16 @@ public class RelaxActivity extends AppCompatActivity {
 
         // Create an ArrayList of Song objects
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("On The Beat", "The B.B. & Q. Band", R.drawable.funky_1_on_the_beat,R.drawable.play_button));
-        songs.add(new Song("Give me The Night", "George Benson", R.drawable.funky_2_give_me_the_night,R.drawable.play_button));
-        songs.add(new Song("Superstition", "Stevie Wonder", R.drawable.funky_3_superstition,R.drawable.play_button));
-        songs.add(new Song("Celebration", "Kool & The Gang", R.drawable.funky_4_celebration,R.drawable.play_button));
-        songs.add(new Song("Fire", "Ohio Players", R.drawable.funky_5_fire,R.drawable.play_button));
-        songs.add(new Song("Cutie Pie", "One Way", R.drawable.funky_6_cutie_pie,R.drawable.play_button));
-        songs.add(new Song("Mary Jane", "Rick James", R.drawable.funky_7_mary_jane,R.drawable.play_button));
-        songs.add(new Song("Getaway", "Earth, Wind & Fire", R.drawable.funky_8_getaway,R.drawable.play_button));
+
+        songs.add(new Song("PLAY ALL THE PLAYLIST", "Playlist RELAX", R.drawable.relax,R.drawable.play_button));
+        songs.add(new Song("Trouble", "Coldplay", R.drawable.relax_1_trouble,R.drawable.play_btn));
+        songs.add(new Song("Ride", "Lana del Rey", R.drawable.relax_2_ride,R.drawable.play_btn));
+        songs.add(new Song("Chasing Cars", "Snow Patrol", R.drawable.relax_3_chasing_cars,R.drawable.play_btn));
+        songs.add(new Song("Diamonds", "Rihanna", R.drawable.relax_4_diamonds,R.drawable.play_btn));
+        songs.add(new Song("Stay", "Rihanna", R.drawable.relax_5_stay,R.drawable.play_btn));
+        songs.add(new Song("The Reason", "Hoobastank", R.drawable.relax_6_reason,R.drawable.play_btn));
+        songs.add(new Song("Iris", "Goo Goo Dolls", R.drawable.relax_7_iris,R.drawable.play_btn));
+        songs.add(new Song("Who Knew", "Pink", R.drawable.relax_8_who_knew,R.drawable.play_btn));
 
         // Create an {@link SongAdapter}, whose data source is a list of
         // {@link Song}s. The adapter knows how to create list item views for each item

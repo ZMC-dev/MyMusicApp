@@ -15,14 +15,15 @@ public class WorkingOutActivity extends AppCompatActivity {
 
         // Create an ArrayList of Song objects
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("On The Beat", "The B.B. & Q. Band", R.drawable.funky_1_on_the_beat,R.drawable.play_button));
-        songs.add(new Song("Give me The Night", "George Benson", R.drawable.funky_2_give_me_the_night,R.drawable.play_button));
-        songs.add(new Song("Superstition", "Stevie Wonder", R.drawable.funky_3_superstition,R.drawable.play_button));
-        songs.add(new Song("Celebration", "Kool & The Gang", R.drawable.funky_4_celebration,R.drawable.play_button));
-        songs.add(new Song("Fire", "Ohio Players", R.drawable.funky_5_fire,R.drawable.play_button));
-        songs.add(new Song("Cutie Pie", "One Way", R.drawable.funky_6_cutie_pie,R.drawable.play_button));
-        songs.add(new Song("Mary Jane", "Rick James", R.drawable.funky_7_mary_jane,R.drawable.play_button));
-        songs.add(new Song("Getaway", "Earth, Wind & Fire", R.drawable.funky_8_getaway,R.drawable.play_button));
+        songs.add(new Song("PLAY ALL THE PLAYLIST", "Playlist WORKING-OUT", R.drawable.workout,R.drawable.play_button));
+        songs.add(new Song("Con Calma", "Daddy Yankee", R.drawable.workout_1_con_calma,R.drawable.play_btn));
+        songs.add(new Song("Pretend", "CNCO", R.drawable.workout_2_pretend,R.drawable.play_btn));
+        songs.add(new Song("Taboo", "Don Omar", R.drawable.workout_3_taboo,R.drawable.play_btn));
+        songs.add(new Song("Sin Pijama", "Becky G & Natti Natasha", R.drawable.workout_4_sin_pijama,R.drawable.play_btn));
+        songs.add(new Song("Dura", "Daddy Yankee", R.drawable.workout_5_dura,R.drawable.play_btn));
+        songs.add(new Song("Imposible", "Luis Fonsi", R.drawable.workout_6_impossible,R.drawable.play_btn));
+        songs.add(new Song("Mi Cama", "Karol G", R.drawable.workout_7_mi_cama,R.drawable.play_btn));
+        songs.add(new Song("Terremoto", "Anitta", R.drawable.workout_8_terremoto,R.drawable.play_btn));
 
         // Create an {@link SongAdapter}, whose data source is a list of
         // {@link Song}s. The adapter knows how to create list item views for each item

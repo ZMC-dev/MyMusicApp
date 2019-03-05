@@ -20,31 +20,31 @@ public class SongAdapter extends ArrayAdapter <Song> {
     private static final String LOG_TAG = SongAdapter.class.getSimpleName();
 
     /**
-     * @param context         The current context. Used to inflate the layout file.
-     * @param songs A List of song objects to display in a list
+     * @param context The current context. Used to inflate the layout file.
+     * @param songs   A List of song objects to display in a list
      */
     public SongAdapter(Activity context, ArrayList<Song> songs) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
-        super (context,0,songs);
+        super(context, 0, songs);
     }
 
     /**
      * Provides a view for an AdapterView (ListView, GridView, etc.)
      *
-     * @param position The position in the list of data that should be displayed in the
-     *                 list item view.
+     * @param position    The position in the list of data that should be displayed in the
+     *                    list item view.
      * @param convertView The recycled view to populate.
-     * @param parent The parent ViewGroup that is used for inflation.
+     * @param parent      The parent ViewGroup that is used for inflation.
      * @return The View for the position in the AdapterView.
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
@@ -83,5 +83,7 @@ public class SongAdapter extends ArrayAdapter <Song> {
     }
 
 }
+
+
 
 

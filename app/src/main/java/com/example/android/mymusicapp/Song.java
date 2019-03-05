@@ -1,8 +1,8 @@
 package com.example.android.mymusicapp;
 
 /**
- * {@link Song} represents a single Android platform release.
- * Each object has 3 properties: song title, song singer, and image resource ID.
+ * {@link Song} represents a details of the songs.
+ * Each object has 4 properties: song title, song singer, image resource ID, image to play another playlist.
  */
 public class Song {
 
@@ -12,18 +12,20 @@ public class Song {
     // Name of the singer
     private String mSongSinger;
 
-    // Drawable resource ID
+    // Drawable resource image of the song
     private int mImageResourceId;
 
-    // Drawable icon
+    // Drawable icon play button
     private int mIconPlayButton;
+
 
     /*
      * Create a new Song object.
      *
      * @param vTitle is the name of the song
      * @param vSinger is the corresponding song performer
-     * @param image is drawable reference ID that corresponds to the icon of the song
+     * @param imageResourceId is drawable reference ID that corresponds to the image of the song
+     * @param iconPlayButton is drawable reference to the icon of play button
      * */
     public Song (String vTitle, String vSinger, int imageResourceId, int iconPlayButton)
     {
@@ -39,7 +41,6 @@ public class Song {
     public String getSongTitle () {
         return mSongTitle;
     }
-
     /**
      * Get the singer of the song
      */
@@ -53,11 +54,14 @@ public class Song {
     public int getImageResourceId() {
         return mImageResourceId;
     }
-
     /**
      * Get the play button image icon
      */
-    public int getIconPlayButton() { return mIconPlayButton;
+    public int getIconPlayButton() {
+        return mIconPlayButton;
     }
 
-}
+
+    }
+
+

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
+        // Find the View that shows the funky songs category
         TextView funky = (TextView) findViewById(R.id.funky);
 
         // Set a click listener on that View (funky)
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the colors category
+        // Find the View that shows the party songs category
         TextView party = (TextView) findViewById(R.id.party);
 
         // Set a click listener on that View (party)
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Find the View that shows the colors category
+        // Find the View that shows the relax songs category
         TextView relax = (TextView) findViewById(R.id.relax);
 
         // Set a click listener on that View (relax)
@@ -84,12 +84,12 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        // Find the View that shows the colors category
+        // Find the View that shows the working out songs category
         TextView workout = (TextView) findViewById(R.id.workout);
 
         // Set a click listener on that View (workout)
         workout.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the playlist Workout View is clicked on.
+            // The code in this method will be executed when the playlist Working out View is clicked on.
             @Override
             public void onClick(View view) {
                 // Create a new intent to open the {@link WorkingOutActivity}

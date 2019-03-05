@@ -15,14 +15,15 @@ public class PartyActivity extends AppCompatActivity {
 
         // Create an ArrayList of Song objects
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("On The Beat", "The B.B. & Q. Band", R.drawable.funky_1_on_the_beat,R.drawable.play_button));
-        songs.add(new Song("Give me The Night", "George Benson", R.drawable.funky_2_give_me_the_night,R.drawable.play_button));
-        songs.add(new Song("Superstition", "Stevie Wonder", R.drawable.funky_3_superstition,R.drawable.play_button));
-        songs.add(new Song("Celebration", "Kool & The Gang", R.drawable.funky_4_celebration,R.drawable.play_button));
-        songs.add(new Song("Fire", "Ohio Players", R.drawable.funky_5_fire,R.drawable.play_button));
-        songs.add(new Song("Cutie Pie", "One Way", R.drawable.funky_6_cutie_pie,R.drawable.play_button));
-        songs.add(new Song("Mary Jane", "Rick James", R.drawable.funky_7_mary_jane,R.drawable.play_button));
-        songs.add(new Song("Getaway", "Earth, Wind & Fire", R.drawable.funky_8_getaway,R.drawable.play_button));
+        songs.add(new Song("PLAY ALL THE PLAYLIST", "Playlist PARTY", R.drawable.party,R.drawable.play_button));
+        songs.add(new Song("Crazy in Love", "The B.B. & Q. Band", R.drawable.party_1_crazy_inlove,R.drawable.play_btn));
+        songs.add(new Song("Umbrella", "Rihanna", R.drawable.party_2_umbrella,R.drawable.play_btn));
+        songs.add(new Song("I Gotta Feeling", "The Black Eyes Peas", R.drawable.party_3_gotta_feeling,R.drawable.play_btn));
+        songs.add(new Song("Taki Taki", "DJ Snake", R.drawable.party_4_taki_taki,R.drawable.play_btn));
+        songs.add(new Song("Cosmic Girl", "Jamiroquai", R.drawable.party_5_cosmic_girl,R.drawable.play_btn));
+        songs.add(new Song("Price Tag", "Jessie J", R.drawable.party_6_price_tag,R.drawable.play_btn));
+        songs.add(new Song("Shape of You", "Ed Sheeran", R.drawable.party_7_shape_of_you,R.drawable.play_btn));
+        songs.add(new Song("Treasure", "Bruno Mars", R.drawable.party_8_treasure,R.drawable.play_btn));
 
         // Create an {@link SongAdapter}, whose data source is a list of
         // {@link Song}s. The adapter knows how to create list item views for each item

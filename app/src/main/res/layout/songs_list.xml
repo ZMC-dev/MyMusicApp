@@ -7,28 +7,31 @@
     android:layout_height="fill_parent"
     android:fillViewport="true">
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
+
 
         <ListView
             android:id="@+id/list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="16dp"
-            android:paddingTop="16dp"
-            android:paddingRight="16dp"
-            android:paddingBottom="16dp">
+            android:paddingStart="16dp">
+
         </ListView>
 
-    <TextView
-        android:id="@+id/play_playlist"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Play all the Playlist"/>
+        <ListView
+            android:id="@+id/playlists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:layout_below="@+id/list">
 
-    </LinearLayout>
+        </ListView>
+
+    </RelativeLayout>
 
 </ScrollView>
