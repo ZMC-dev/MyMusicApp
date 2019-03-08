@@ -10,17 +10,17 @@ public class Playlists {
     // title to introduce the playlists
     private String mIntro_playlists;
 
-     // Name of the first proposed playlist
-     private int mPlaylist_1;
+     // ImageButton of the first proposed playlist
+     private int mImgBtn_playlist1;
 
-     // Name of the second proposed playlist
-     private int mPlaylist_2;
+     // ImageButtonof the second proposed playlist
+     private int mImgBtn_playlist2;
 
-     // Name of the third proposed playlist
-     private int mPlaylist_3;
+     // ImageButton of the third proposed playlist
+     private int mImgBtn_playlist3;
 
-     // Name of the fourth proposed playlist
-     private int mPlaylist_4;
+     // ImageButton of the fourth proposed playlist
+     private int mImgBtn_playlist4;
 
 
 
@@ -29,11 +29,10 @@ public class Playlists {
     public Playlists (String introPlaylists, int playlist_1, int playlist_2, int playlist_3, int playlist_4) {
 
         mIntro_playlists = introPlaylists;
-        mPlaylist_1 = playlist_1;
-        mPlaylist_2 = playlist_2;
-        mPlaylist_3 = playlist_3;
-        mPlaylist_4= playlist_4;
-
+        mImgBtn_playlist1  = playlist_1;
+        mImgBtn_playlist2 = playlist_2;
+        mImgBtn_playlist3 = playlist_3;
+        mImgBtn_playlist4  = playlist_4;
 
     }
 
@@ -45,22 +44,22 @@ public class Playlists {
     /**
      * Get the image of the playlist 1
      */
-    public int getPlaylist_1 () { return mPlaylist_1; }
+    public int getImgBtn_playlist1 () { return mImgBtn_playlist1; }
 
      /**
       * Get the image of the playlist 2
       */
-     public int getPlaylist_2 () { return mPlaylist_2; }
+     public int getImgBtn_playlist2 () { return mImgBtn_playlist2; }
 
      /**
       * Get the image of the playlist 3
       */
-     public int getPlaylist_3 () { return mPlaylist_3; }
+     public int getImgBtn_playlist3 () { return mImgBtn_playlist3; }
 
      /**
       * Get the image of the playlist 4
       */
-     public int getPlaylist_4 () { return mPlaylist_4; }
+     public int getImgBtn_playlist4 () { return mImgBtn_playlist4; }
 
 
 }

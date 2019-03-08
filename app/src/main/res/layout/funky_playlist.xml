@@ -14,7 +14,7 @@
 
 
         <ListView
-            android:id="@+id/list"
+            android:id="@+id/listViewFunkySongs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -23,12 +23,12 @@
         </ListView>
 
         <ListView
-            android:id="@+id/playlists"
+            android:id="@+id/playlistOptionsOnFunky"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingStart="16dp"
-            android:layout_below="@+id/list">
+            android:layout_below="@+id/listViewFunkySongs">
 
         </ListView>
 

@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -45,40 +45,40 @@ public class PlaylistsAdapter extends ArrayAdapter<Playlists> {
             }
 
             // Get the {@link Song} object located at this position in the list
-            Playlists showPlaylists = getItem(position);
+            Playlists optionalPlaylists = getItem(position);
 
 
             // Find the TextView in the list_playlists.xml layout with the ID song_title
             TextView introTextView = (TextView) listPlaylistView.findViewById(R.id.intro_playlists);
             // Get the title from the current Song object and
             // set this text on the name TextView
-            introTextView.setText(showPlaylists.getIntro_playlists());
+            introTextView.setText(optionalPlaylists.getIntro_playlists());
 
 
             // Find the ImageView in the list_playlists.xml layout with the ID list_song_image
-            ImageView imagePlaylist1 = (ImageView) listPlaylistView.findViewById(R.id.playlist_1);
+            ImageButton imgBtnPlaylist1 = (ImageButton) listPlaylistView.findViewById(R.id.imgBtn_playlist1);
             // Get the image resource ID from the current Song object and
             // set the image to iconView
-            imagePlaylist1.setImageResource(showPlaylists.getPlaylist_1());
+            imgBtnPlaylist1.setImageResource(optionalPlaylists.getImgBtn_playlist1());
 
 
-            // Find the ImageView in the list_playlists.xml layout with the ID play_btn_icon
-            ImageView imagePlaylist2 = (ImageView) listPlaylistView.findViewById(R.id.playlist_2);
+            // Find this ImageButton in the list_playlists.xml layout
+            ImageButton imgBtnPlaylist2 = (ImageButton) listPlaylistView.findViewById(R.id.imgBtn_playlist2);
             // Get the image resource ID from the current Song object and
             // set the image to iconView
-            imagePlaylist2.setImageResource(showPlaylists.getPlaylist_2());
-
-            // Find the ImageView in the list_playlists.xml layout with the ID play_btn_icon
-            ImageView imagePlaylist3 = (ImageView) listPlaylistView.findViewById(R.id.playlist_3);
-            // Get the image resource ID from the current Song object and
-            // set the image to iconView
-            imagePlaylist3.setImageResource(showPlaylists.getPlaylist_3());
+            imgBtnPlaylist2.setImageResource(optionalPlaylists.getImgBtn_playlist2());
 
             // Find the ImageView in the list_playlists.xml layout with the ID play_btn_icon
-            ImageView imagePlaylist4 = (ImageView) listPlaylistView.findViewById(R.id.playlist_4);
+            ImageButton imgBtnPlaylist3 = (ImageButton) listPlaylistView.findViewById(R.id.imgBtn_playlist3);
             // Get the image resource ID from the current Song object and
             // set the image to iconView
-            imagePlaylist4.setImageResource(showPlaylists.getPlaylist_4());
+            imgBtnPlaylist3.setImageResource(optionalPlaylists.getImgBtn_playlist3());
+
+            // Find the ImageView in the list_playlists.xml layout with the ID play_btn_icon
+            ImageButton imgBtnPlaylist4 = (ImageButton) listPlaylistView.findViewById(R.id.imgBtn_playlist4);
+            // Get the image resource ID from the current Song object and
+            // set the image to iconView
+            imgBtnPlaylist4.setImageResource(optionalPlaylists.getImgBtn_playlist4());
 
 
             // Return the whole list item layout (containing 2 TextViews and an ImageView)
