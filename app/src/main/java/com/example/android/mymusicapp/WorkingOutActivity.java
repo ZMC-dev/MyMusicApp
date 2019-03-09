@@ -1,11 +1,16 @@
 package com.example.android.mymusicapp;
 
+import android.content.Intent;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -16,9 +21,67 @@ public class WorkingOutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.workout_playlist);
 
+        // Set this method to to unable the Up navigation and the text to display
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("All my Playlists");
+
+
+        // Method of the first Image button "Favorite Playlists" (Horizontal Layout) on workout_playlist.xml
+        ImageButton imgBtn_playlist1 = (ImageButton) findViewById(R.id.imgBtn_FunkyOnWorkout);
+        imgBtn_playlist1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openPlaylistFunky = new Intent(WorkingOutActivity.this, FunkyActivity.class);
+                startActivity(openPlaylistFunky);
+
+                Toast.makeText(WorkingOutActivity.this, "Playlist Funky", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        // Method of the second Image button "Favorite Playlists" (Horizontal Layout) on workout_playlist.xml
+        ImageButton imgBtn_playlist2 = (ImageButton) findViewById(R.id.imgBtn_RelaxOnWorkout);
+        imgBtn_playlist2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openPlaylistRelax = new Intent(WorkingOutActivity.this, RelaxActivity.class);
+                startActivity(openPlaylistRelax);
+
+                Toast.makeText(WorkingOutActivity.this, "Playlist Relax", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        // Method of the third Image button "Favorite Playlists" (Horizontal Layout) on workout_playlist.xml
+        ImageButton imgBtn_playlist3 = (ImageButton) findViewById(R.id.imgBtn_LoveOnWorkout);
+        imgBtn_playlist3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent openPlaylistLove = new Intent(WorkingOutActivity.this, LoveSongsActivity.class);
+                startActivity(openPlaylistLove);
+
+                Toast.makeText(WorkingOutActivity.this, "Playlist Love", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        // Method of the fourth Image button "Favorite Playlists" (Horizontal Layout) on workout_playlist.xml
+        ImageButton imgBtn_playlist4 = (ImageButton) findViewById(R.id.imgBtn_PartyOnWorkout);
+        imgBtn_playlist4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent openPlaylistParty = new Intent(WorkingOutActivity.this, PartyActivity.class);
+                startActivity(openPlaylistParty);
+
+                Toast.makeText(WorkingOutActivity.this, "Playlist Party", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
         // Create an ArrayList of Song objects
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new Song("PLAY ALL THE PLAYLIST", "Playlist WORKING-OUT", R.drawable.workout,R.drawable.play_button));
         songs.add(new Song("Con Calma", "Daddy Yankee", R.drawable.workout_1_con_calma,R.drawable.play_btn));
         songs.add(new Song("Pretend", "CNCO", R.drawable.workout_2_pretend,R.drawable.play_btn));
         songs.add(new Song("Taboo", "Don Omar", R.drawable.workout_3_taboo,R.drawable.play_btn));
@@ -37,42 +100,18 @@ public class WorkingOutActivity extends AppCompatActivity {
         // Get a reference to the ListView, and attach the adapter to the listView.
         ListView listView = (ListView) findViewById(R.id.listViewWorkoutSongs);
         listView.setAdapter (songAdapter);
-        setListViewHeightBasedOnChildren(listView);
-
-        // Create an ArrayList of Playlists objects
-        ArrayList<Playlists> playlists = new ArrayList<Playlists>();
-
-        playlists.add(new Playlists("Checkout my favorite playlists", R.drawable.party, R.drawable.love_songs, R.drawable.relax, R.drawable.funky));
-
-        // Create an {@link PlaylistsAdapter}, whose data source is a list of
-        // {@link Song}s. The adapter knows how to create list item views for each item
-        // in the list
-        PlaylistsAdapter playlistsAdapter = new PlaylistsAdapter(this, playlists);
-
-        // Get a reference to the ListView, and attach the adapter to the listView.
-        ListView playlistsView = (ListView) findViewById(R.id.playlistOptionsOnWorkingOut);
-        playlistsView.setAdapter(playlistsAdapter);
-        setListViewHeightBasedOnChildren(playlistsView);
 
     }
 
-    public void setListViewHeightBasedOnChildren(ListView listView) {
-        ArrayAdapter listAdapter = (ArrayAdapter) listView.getAdapter();
-        if (listAdapter == null) {
-            // pre-condition
-            return;
+    // NavUtils class's static method link to up navigation bar
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
         }
-
-        int totalHeight = 0;
-        for (int i = 0; i < listAdapter.getCount(); i++) {
-            View listItem = listAdapter.getView(i, null, listView);
-            listItem.measure(0, 0);
-            totalHeight += listItem.getMeasuredHeight();
-        }
-
-        ViewGroup.LayoutParams params = listView.getLayoutParams();
-        params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
-        listView.setLayoutParams(params);
-        listView.requestLayout();
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Music App</string>
+    <string name="txtView_FavoritePlaylists">Checkout my favorite playlists</string>
+    <string name="playlist_party">Playlist Party</string>
+    <string name="playlist_relax">Playlist Relax</string>
+    <string name="playlist_funky">Playlist Funky</string>
+    <string name="playlist_love">Playlist Love</string>
+    <string name="playlist_working_out">Playlist Working Out</string>
+    <string name="email_text"><![CDATA[Hey ! Checkout my favorite playlist Funky, Love Songs, Party, Relax & Working-out in MY MUSIC APP]]></string>
 </resources>

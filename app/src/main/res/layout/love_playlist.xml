@@ -1,39 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FunkyActivity">
+    android:orientation="vertical"
+    tools:context=".LoveSongsActivity">
 
+    <TextView
+        style="@style/CategoryStyle"
+        android:background="@color/category_love"
+        android:text="@string/playlist_love" />
 
-    <ScrollView
+    <ListView
+        android:id="@+id/listViewLoveSongs"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="420dp"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    </ListView>
 
-
-            <ListView
-                android:id="@+id/listViewLoveSongs"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="16dp" />
-
-            <ListView
-                android:id="@+id/playlistOptionsOnLove"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="16dp"/>
+    <TextView
+        style="@style/TextViewFavoritePlaylists" />
 
 
-        </LinearLayout>
+    <LinearLayout
+        style="@style/LinearLayoutHorizontal">
 
-    </ScrollView>
+        <ImageButton
+            style="@style/ImageButton"
+            android:id="@+id/imgBtn_FunkyOnLove"
+            android:src="@drawable/funky" />
 
-</RelativeLayout>
+        <ImageButton
+            style="@style/ImageButton"
+            android:id="@+id/imgBtn_PartyOnLove"
+            android:src="@drawable/party" />
+
+        <ImageButton
+            style="@style/ImageButton"
+            android:id="@+id/imgBtn_RelaxOnLove"
+            android:src="@drawable/relax" />
+
+        <ImageButton
+            style="@style/ImageButton"
+            android:id="@+id/imgBtn_WorkoutOnLove"
+            android:src="@drawable/workout" />
+
+    </LinearLayout>
+
+</LinearLayout>

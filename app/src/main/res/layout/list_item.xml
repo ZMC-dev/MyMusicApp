@@ -5,26 +5,25 @@
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:minHeight="?android:attr/listPreferredItemHeight"
-    android:padding="16dp">
-
+    android:padding="15dp">
 
     <ImageView
         android:id="@+id/play_btn_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:paddingRight="10dp"/>
+        android:layout_width="@dimen/imageView_layout_width"
+        android:layout_height="@dimen/imageView_layout_height"
+        android:paddingEnd="10dp"/>
 
     <ImageView
         android:id="@+id/list_song_image"
-        android:layout_width="50dp"
-        android:layout_height="50dp"/>
+        android:layout_width="@dimen/imageView_layout_width"
+        android:layout_height="@dimen/imageView_layout_height"/>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:paddingStart="@dimen/activity_horizontal_margin">
 
         <TextView
             android:id="@+id/song_title"

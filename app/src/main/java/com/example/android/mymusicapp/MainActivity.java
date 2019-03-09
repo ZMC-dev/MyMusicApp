@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent shareMyPlaylistEmail = new Intent(Intent.ACTION_SENDTO);
                 shareMyPlaylistEmail.setData(Uri.parse("mailto:")); // only email apps should handle this
-                shareMyPlaylistEmail.putExtra(Intent.EXTRA_SUBJECT, "My Music App");
-                shareMyPlaylistEmail.putExtra(Intent.EXTRA_TEXT, "Hey ! Checkout my favorite playlist Funky, Love Songs, Party, Relax & Working-out in MY MUSIC APP");
+                shareMyPlaylistEmail.putExtra(Intent.EXTRA_SUBJECT, R.string.app_name);
+                shareMyPlaylistEmail.putExtra(Intent.EXTRA_TEXT, R.string.email_text);
                 if (shareMyPlaylistEmail.resolveActivity(getPackageManager()) != null) {
                     startActivity(shareMyPlaylistEmail);
 

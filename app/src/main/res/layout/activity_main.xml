@@ -22,17 +22,6 @@
             android:layout_width="match_parent"
             android:src="@drawable/my_music_app" />
 
-
-        <TextView
-            android:fontFamily="sans-serif-condensed-light"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:paddingBottom="5dp"
-            android:text="My Favorite Playlists"
-            android:textAlignment="center"
-            android:textColor="#424242"
-            android:textSize="25sp" />
-
         <TextView
             style="@style/CategoryStyle"
             android:background="@color/category_funky"

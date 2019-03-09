@@ -12,20 +12,24 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".FunkyActivity"
-            android:label="Playlist FUNKY"/>
+            android:label="Playlist FUNKY"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".RelaxActivity"
-            android:label="Playlist RELAX"/>
+            android:label="Playlist RELAX"
+            android:parentActivityName=".MainActivity"/>/>
         <activity android:name=".WorkingOutActivity"
-            android:label="Playlist WORKING OUT"/>
+            android:label="Playlist WORKING OUT"
+            android:parentActivityName=".MainActivity"/>/>
         <activity android:name=".LoveSongsActivity"
-            android:label="Playlist LOVE SONGS"/>
+            android:label="Playlist LOVE SONGS"
+            android:parentActivityName=".MainActivity"/>/>
         <activity android:name=".PartyActivity"
-            android:label="Playlist PARTY"></activity>
+            android:label="Playlist PARTY"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
